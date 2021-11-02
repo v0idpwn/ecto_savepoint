@@ -17,5 +17,8 @@ defmodule EctoSavepointTest do
   test "injects the functions" do
     assert function_exported?(FakeRepo, :savepoint, 1)
     assert function_exported?(FakeRepo, :rollback_to_savepoint, 1)
+
+    assert "SAVEPOINT my_savepoint" == FakeRepo.savepoint("my_savepoint")
+    assert "ROLLBACK TO SAVEPOINT my_savepoint" == FakeRepo.rollback_to_savepoint("my_savepoint")
   end
 end
