@@ -1,4 +1,5 @@
 # EctoSavepoint
+[![Hex pm](https://img.shields.io/hexpm/dt/ecto_savepoint?color=brightgreen)](https://hex.pm/packages/ecto_savepoint)
 
 Wrapper over savepoints for Ecto with Postgrex or Myxql
 
